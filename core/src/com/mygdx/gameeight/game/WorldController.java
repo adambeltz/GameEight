@@ -34,10 +34,10 @@ public class WorldController extends InputAdapter {
 
     private void handleInput(float deltaTime) {
 
-        if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) moveSprite(cats.grayCat, -4, 0);
-        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) moveSprite(cats.grayCat, 4, 0);
-        if (Gdx.input.isKeyPressed(Input.Keys.UP)) moveSprite(cats.grayCat, 0, 4);
-        if (Gdx.input.isKeyPressed(Input.Keys.DOWN)) moveSprite(cats.grayCat, 0, -4);
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) moveSprite(cats.grayCat, -6, 0);
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) moveSprite(cats.grayCat, 6, 0);
+        if (Gdx.input.isKeyPressed(Input.Keys.UP)) moveSprite(cats.grayCat, 0, 6);
+        if (Gdx.input.isKeyPressed(Input.Keys.DOWN)) moveSprite(cats.grayCat, 0, -6);
 
         if (Gdx.input.isKeyPressed(Input.Keys.Z)) changeScale(items.lips, 1.1f);
         if (Gdx.input.isKeyPressed(Input.Keys.X)) changeScale(items.lips, 0.9f);

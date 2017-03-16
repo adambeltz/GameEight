@@ -13,7 +13,7 @@ public class Constants {
 
     public static final float VIEWPORT_GUI_WIDTH = 1366F;
     public static final float VIEWPORT_GUI_HEIGHT = 768F;
-    public static final String text = "TEST GuI";
+    public static final String text = "TARDA CaT";
 
 
 }
