@@ -1,0 +1,48 @@
+
+Atlas.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+background_1920x1080
+  rotate: false
+  xy: 2, 878
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+berries
+  rotate: false
+  xy: 1119, 612
+  size: 240, 264
+  orig: 240, 264
+  offset: 0, 0
+  index: -1
+cactus
+  rotate: false
+  xy: 504, 457
+  size: 280, 419
+  orig: 280, 419
+  offset: 0, 0
+  index: -1
+cat
+  rotate: false
+  xy: 786, 536
+  size: 331, 340
+  orig: 331, 340
+  offset: 0, 0
+  index: -1
+gray_cat_front001_small
+  rotate: false
+  xy: 2, 205
+  size: 500, 671
+  orig: 500, 671
+  offset: 0, 0
+  index: -1
+lips
+  rotate: false
+  xy: 2, 2
+  size: 482, 201
+  orig: 482, 201
+  offset: 0, 0
+  index: -1
