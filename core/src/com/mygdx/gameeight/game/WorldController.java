@@ -5,17 +5,23 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputAdapter;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.physics.box2d.World;
+import com.badlogic.gdx.utils.Disposable;
 import com.mygdx.gameeight.util.Constants;
 
-public class WorldController extends InputAdapter {
+public class WorldController extends InputAdapter implements Disposable {
     Cats cats;
     Items items;
     float deltaTime;
 
+    // *Box 2D*
+    World world;
+
 
     public WorldController(){
         init();
-        deltaTime = 0;
+        deltaTime = 1;
     }
 
     public void init(){
@@ -23,12 +29,18 @@ public class WorldController extends InputAdapter {
         items = new Items();
         Gdx.input.setInputProcessor(this);
 
+        // *Box 2D*
+        world = new World(new Vector2(0, -10), true);
+
 
     }
 
     public void update(float deltaTime){
         this.deltaTime = deltaTime;
         handleInput(deltaTime);
+
+        // *Box 2D*
+        world.step(deltaTime, 8, 3);
 
     }
 
@@ -68,5 +80,12 @@ public class WorldController extends InputAdapter {
             Constants.RUNNING = false;
         }
         return true;
+    }
+
+    @Override
+    public void dispose() {
+
+        // *Box 2D*
+        world.dispose();
     }
 }

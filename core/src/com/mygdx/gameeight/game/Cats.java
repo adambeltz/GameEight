@@ -2,6 +2,7 @@ package com.mygdx.gameeight.game;
 
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.physics.box2d.Body;
 import com.mygdx.gameeight.GameEightMain;
 import com.mygdx.gameeight.util.Constants;
 
@@ -9,6 +10,7 @@ import com.mygdx.gameeight.util.Constants;
 public class Cats extends AbstractGameObject {
     Sprite grayCat;
     Sprite brownCat;
+    public Body body;
 
     public Cats(){
         init();

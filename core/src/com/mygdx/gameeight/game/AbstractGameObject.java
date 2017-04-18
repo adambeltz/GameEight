@@ -10,6 +10,8 @@ public abstract class AbstractGameObject {
 
 
 
+
+
     public AbstractGameObject(){
 
         positionV2 = new Vector2(0, 0);
